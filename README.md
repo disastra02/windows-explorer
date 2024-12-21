@@ -27,7 +27,7 @@ bun prisma migrate dev
 ```
 5. Jalankan seeder database untuk data awal atau sebagai data contoh.
 ```sh
-bun prisma db seed
+bun run prisma/seed.ts
 ```
 6. Jalankan server.
 ```sh

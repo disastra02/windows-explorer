@@ -9,7 +9,11 @@ export const FolderRepository =  {
                 include: {children: true}
             });
 
-            return folders;
+            return folders.map((folder) => ({
+                ...folder,
+                children: folder.children.sort((a, b) => a.name.localeCompare(b.name)),
+            }));
+            // return folders;
         } catch (e: unknown) {
             throw new Error(`Error fetching folders: ${e}`);
         }
@@ -23,7 +27,11 @@ export const FolderRepository =  {
                 include: {children: true}
             });
 
-            return folders;
+            return folders.map((folder) => ({
+                ...folder,
+                children: folder.children.sort((a, b) => a.name.localeCompare(b.name)),
+            }));
+            // return folders;
         } catch (e: unknown) {
             throw new Error(`Error fetching sub folders: ${e}`);
         }
