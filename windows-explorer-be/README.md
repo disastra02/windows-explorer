@@ -9,7 +9,6 @@ Halaman web ini mirip dengan Windows Explorer. Halaman tersebut dibagi secara ho
 - Runtime: Bun
 
 ## Instalasi
-
 Ikuti langkah-langkah berikut untuk menginstal aplikasi ini.
 
 1. Install dependensi.
@@ -25,7 +24,7 @@ bun prisma migrate dev
 ```sh
 bun prisma db seed
 ```
-4. Jalankan server.
+5. Jalankan server.
 ```sh
 bun run dev
 ```
