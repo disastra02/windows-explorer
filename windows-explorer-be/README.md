@@ -1,15 +1,33 @@
-# Elysia with Bun runtime
+## Windows Explorer BE
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
-```bash
-bun create elysia ./elysia-example
+### Deskripsi
+Halaman web ini mirip dengan Windows Explorer. Halaman tersebut dibagi secara horizontal menjadi dua panel. Panel kiri berisi struktur folder, sedangkan panel kanan berisi subfolder langsung dari folder yang dipilih di panel kiri.
+
+### Teknologi
+- Framework: ElysiaJS 
+- Database: MySQL
+- Runtime: Bun
+
+## Instalasi
+
+Ikuti langkah-langkah berikut untuk menginstal aplikasi ini.
+
+1. Install dependensi
+```sh
+bun install
 ```
-
-## Development
-To start the development server run:
-```bash
+2. Konfigurasi file .env sesuaikan dengan yang dimiliki
+3. Jalankan migrasi database
+```sh
+bun prisma migrate dev
+```
+4. Jalankan seeder database untuk data awal / data contoh
+```sh
+bun prisma db seed
+```
+4. Jalankan server
+```sh
 bun run dev
 ```
 
-Open http://localhost:3000/ with your browser to see the result.
+Buka http://localhost:5000/ dengan browser Anda untuk melihat hasilnya.
