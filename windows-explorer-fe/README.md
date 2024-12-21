@@ -1,41 +1,22 @@
-# windows-explorer-fe
+## Windows Explorer FE
 
-This template should help get you started developing with Vue 3 in Vite.
+### Deskripsi
+Halaman web ini mirip dengan Windows Explorer. Halaman tersebut dibagi secara horizontal menjadi dua panel. Panel kiri berisi struktur folder, sedangkan panel kanan berisi subfolder langsung dari folder yang dipilih di panel kiri.
 
-## Recommended IDE Setup
+### Teknologi
+- Framework: VueJS 3
+- Runtime: Bun
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Instalasi
+Ikuti langkah-langkah berikut untuk menginstal aplikasi ini.
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
+1. Install dependensi.
 ```sh
 bun install
 ```
-
-### Compile and Hot-Reload for Development
-
+2. Jalankan server.
 ```sh
 bun dev
 ```
 
-### Compile and Minify for Production
-
-```sh
-bun run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-bun test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-bun lint
-```
+Buka http://localhost:3000/ dengan browser Anda untuk melihat hasilnya.
