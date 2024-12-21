@@ -12,20 +12,20 @@ Halaman web ini mirip dengan Windows Explorer. Halaman tersebut dibagi secara ho
 
 Ikuti langkah-langkah berikut untuk menginstal aplikasi ini.
 
-1. Install dependensi
+1. Install dependensi.
 ```sh
 bun install
 ```
-2. Konfigurasi file .env sesuaikan dengan yang dimiliki
-3. Jalankan migrasi database
+2. Konfigurasi file .env sesuaikan dengan yang dimiliki.
+3. Jalankan migrasi database.
 ```sh
 bun prisma migrate dev
 ```
-4. Jalankan seeder database untuk data awal / data contoh
+4. Jalankan seeder database untuk data awal atau sebagai data contoh.
 ```sh
 bun prisma db seed
 ```
-4. Jalankan server
+4. Jalankan server.
 ```sh
 bun run dev
 ```
